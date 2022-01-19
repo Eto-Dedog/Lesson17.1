@@ -12,6 +12,7 @@
 }
 
 .input{
+  width: 100%;
   max-width: 220px;
   margin: auto;
   margin-top: 5px;
