@@ -6,62 +6,42 @@ function Plant(name, description, view, year, nameClass, size){
   this.nameClass = nameClass;
   this.size = size;
 }
-
 Plant.prototype.getNameDescription = function(){
   return this.description;
 }
-
 Plant.prototype.getNameSize = function(){
   return this.name + ' размер соцветия равен: ' + this.size;
 }
-
 var plant = new Plant('rose', 'common rose', 'common', '2 weeks', 'secondClass', '7 sm', 'Europe');
-
 console.log(plant.getNameDescription());
 console.log(plant.getNameSize());
-
-
-
 function Tree(name, description, view, year, nameClass, size, classDangerous, place, applicationArea){
   Plant.call(this, name, description, view, year, nameClass, size, applicationArea);
   this.classDangerous = classDangerous;
   this.place = place;
 }
-
 Tree.prototype = Object.create(Plant.prototype);
-
 Tree.prototype.getClassDangerous = function(){
   return this.classDangerous;
 }
-
 var tree = new Tree('Birch', 'common birch', 'common', '10 years', 'firstClass', '4 sm', 'Europe');
-
-
 console.log(tree.getClassDangerous());
-
 console.log(tree.getNameSize());
-
-
-
 function Bush(name, description, view, year, nameClass, size, applicationArea){
   Plant.call(this, name, description, view, year, nameClass, size);
   this.applicationArea = applicationArea;
 }
-
 Bush.prototype = Object.create(Plant.prototype);
-
 Bush.prototype.getNameApplicationArea = function(){
   return this.name + ' ' + this.applicationArea;
 }
-
 var bush = new Bush('Buckthorn', 'buckthorn alder', 'alder', '2 years', 'secondClass', '15 sm', 'Europe');
-
 console.log(bush.getNameApplicationArea());
 console.log(bush.getNameDescription());
-
-console.log('*');
-
 //
+console.log('_');
+console.log('-');
+console.log('‾');
 function got() {
   let inputOne = document.getElementById("input-id-1").value;
   let inputTwo = document.getElementById("input-id-2").value;
@@ -87,7 +67,9 @@ function got() {
   console.log(inputSeven);
   console.log("↓ checkbox ↓");
   console.log(inputEight);
-  console.log('*');
+  console.log('_');
+  console.log('-');
+  console.log('‾');
   alert(inputOne+' '+inputTwo+' '+inputThree+' '+inputFour+' '+inputFive+' '+inputSix+' '+inputEight+' '+inputSeven)
 
   var i = 0;
