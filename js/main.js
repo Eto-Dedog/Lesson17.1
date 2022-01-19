@@ -51,6 +51,14 @@ function got() {
   let inputSix = document.getElementById("input-id-6").value;
   let inputSeven = document.getElementById("input-id-7").value;
   let inputEight = document.getElementById("input-id-8").value;
+  let tdOne = document.getElementById("td-1");
+  let tdTwo = document.getElementById("td-2");
+  let tdThree = document.getElementById("td-3");
+  let tdFour = document.getElementById("td-4");
+  let tdFive = document.getElementById("td-5");
+  let tdSix = document.getElementById("td-6");
+  let tdSeven = document.getElementById("td-7");
+  let tdEight = document.getElementById("td-8");
   console.log("↓ name ↓");
   console.log(inputOne);
   console.log("↓ description ↓");
@@ -77,8 +85,16 @@ function got() {
     var table = document.querySelector("table"),
         original = document.getElementById('table-id'),
         clone = original.cloneNode(true);
-    clone.id = "duplic" + i;
+    clone.id = "duplic" + ++i;
     table.appendChild(clone);
+    tdOne.innerText = inputOne
+    tdTwo.innerText = inputTwo
+    tdThree.innerText = inputThree
+    tdFour.innerText = inputFour
+    tdFive.innerText = inputFive
+    tdSix.innerText = inputSix
+    tdSeven.innerText = inputEight
+    tdEight.innerText = inputSeven
   }
   dump()
 }

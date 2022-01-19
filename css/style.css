@@ -51,3 +51,6 @@ table.table th {
 	color: #fff; 
 	font-weight: normal;
 }
+.d-none{
+  display: none;
+}
