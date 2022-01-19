@@ -15,15 +15,15 @@ Plant.prototype.getNameSize = function(){
   return this.name + ' размер соцветия равен: ' + this.size;
 }
 
-var plant = new Plant('rose', 'common rose', 'common', '2 weeks', 'secondClass', '8 sm');
+var plant = new Plant('rose', 'common rose', 'common', '2 weeks', 'secondClass', '7 sm', 'Europe');
 
 console.log(plant.getNameDescription());
 console.log(plant.getNameSize());
 
 
 
-function Tree(name, description, view, year, nameClass, size, classDangerous, place){
-  Plant.call(this, name, description, view, year, nameClass, size);
+function Tree(name, description, view, year, nameClass, size, classDangerous, place, applicationArea){
+  Plant.call(this, name, description, view, year, nameClass, size, applicationArea);
   this.classDangerous = classDangerous;
   this.place = place;
 }
@@ -34,7 +34,7 @@ Tree.prototype.getClassDangerous = function(){
   return this.classDangerous;
 }
 
-var tree = new Tree('Birch', 'common birch', 'common', '8 years', 'firstClass', '5 sm', 'Europe');
+var tree = new Tree('Birch', 'common birch', 'common', '10 years', 'firstClass', '4 sm', 'Europe');
 
 
 console.log(tree.getClassDangerous());
@@ -54,7 +54,31 @@ Bush.prototype.getNameApplicationArea = function(){
   return this.name + ' ' + this.applicationArea;
 }
 
-var bush = new Bush('Buckthorn', 'buckthorn alder', 'alder', '4 years', 'secondClass', '18 sm', 'Europe');
+var bush = new Bush('Buckthorn', 'buckthorn alder', 'alder', '2 years', 'secondClass', '15 sm', 'Europe');
 
 console.log(bush.getNameApplicationArea());
 console.log(bush.getNameDescription());
+
+console.log('*');
+
+//
+function got() {
+  let inputOne = document.getElementById("input-id-1").value;
+  let inputTwo = document.getElementById("input-id-2").value;
+  let inputThree = document.getElementById("input-id-3").value;
+  let inputFour = document.getElementById("input-id-4").value;
+  let inputFive = document.getElementById("input-id-5").value;
+  let inputSix = document.getElementById("input-id-6").value;
+  let inputSeven = document.getElementById("input-id-7").value;
+  let inputEight = document.getElementById("input-id-8").value;
+  let inputNine = document.getElementById("input-id-9").value;
+  console.log(inputOne);
+  console.log(inputTwo);
+  console.log(inputThree);
+  console.log(inputFour);
+  console.log(inputFive);
+  console.log(inputSix);
+  console.log(inputSeven);
+  console.log(inputEight);
+  console.log(inputNine);
+}
