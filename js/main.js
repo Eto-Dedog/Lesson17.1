@@ -100,3 +100,8 @@ function got() {
   }
   dump()
 }
+
+function del() {
+  let tableRow = document.getElementById('table-tr')
+  tableRow.remove()
+}
