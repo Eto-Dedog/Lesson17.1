@@ -87,5 +87,16 @@ function got() {
   console.log(inputSeven);
   console.log("↓ checkbox ↓");
   console.log(inputEight);
+  console.log('*');
   alert(inputOne+' '+inputTwo+' '+inputThree+' '+inputFour+' '+inputFive+' '+inputSix+' '+inputEight+' '+inputSeven)
+
+  var i = 0;
+  function dump() {
+    var table = document.querySelector("table"),
+        original = document.getElementById('table-id'),
+        clone = original.cloneNode(true);
+    clone.id = "duplic" + i;
+    table.appendChild(clone);
+  }
+  dump()
 }
