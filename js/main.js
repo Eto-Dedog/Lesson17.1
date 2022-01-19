@@ -71,14 +71,21 @@ function got() {
   let inputSix = document.getElementById("input-id-6").value;
   let inputSeven = document.getElementById("input-id-7").value;
   let inputEight = document.getElementById("input-id-8").value;
-  let inputNine = document.getElementById("input-id-9").value;
+  console.log("↓ name ↓");
   console.log(inputOne);
+  console.log("↓ description ↓");
   console.log(inputTwo);
+  console.log("↓ view ↓");
   console.log(inputThree);
+  console.log("↓ year ↓");
   console.log(inputFour);
+  console.log("↓ nameClass ↓");
   console.log(inputFive);
+  console.log("↓ size ↓");
   console.log(inputSix);
+  console.log("↓ applicationArea ↓");
   console.log(inputSeven);
+  console.log("↓ checkbox ↓");
   console.log(inputEight);
-  console.log(inputNine);
+  alert(inputOne+' '+inputTwo+' '+inputThree+' '+inputFour+' '+inputFive+' '+inputSix+' '+inputEight+' '+inputSeven)
 }
