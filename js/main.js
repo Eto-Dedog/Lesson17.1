@@ -1,3 +1,4 @@
+//
 function Plant(name, description, view, year, nameClass, size){
   this.name = name; 
   this.description = description;
