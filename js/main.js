@@ -78,7 +78,7 @@ function got() {
   console.log('_');
   console.log('-');
   console.log('‾');
-  alert(inputOne+' '+inputTwo+' '+inputThree+' '+inputFour+' '+inputFive+' '+inputSix+' '+inputEight+' '+inputSeven)
+  // alert(inputOne+' '+inputTwo+' '+inputThree+' '+inputFour+' '+inputFive+' '+inputSix+' '+inputEight+' '+inputSeven)
 
   var i = 0;
   function dump() {
