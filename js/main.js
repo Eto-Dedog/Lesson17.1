@@ -81,12 +81,13 @@ function got() {
   console.log('‾');
   // alert(inputOne+' '+inputTwo+' '+inputThree+' '+inputFour+' '+inputFive+' '+inputSix+' '+inputEight+' '+inputSeven)
 
-  var i = 0;
+
   function dump() {
-    var table = document.querySelector("table"),
+    let i = 0
+    let table = document.querySelector("table"),
         original = document.getElementById('table-id'),
         clone = original.cloneNode(true);
-    clone.id = "duplic" + ++i;
+        clone.id = "table-id" + ++i;
     table.appendChild(clone);
     tdOne.innerText = inputOne
     tdTwo.innerText = inputTwo
