@@ -87,7 +87,7 @@ function got() {
         original = document.getElementById('table-id')
         clone = original.cloneNode(true)
         clone.id = "table-id-" + ++i
-    table.appendChild(clone);
+        table.appendChild(clone);
     tdOne.innerText = inputOne
     tdTwo.innerText = inputTwo
     tdThree.innerText = inputThree
