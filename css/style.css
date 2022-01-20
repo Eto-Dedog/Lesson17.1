@@ -40,7 +40,7 @@ table.table,table.table td, table.table th {
 	border: 1px solid #595959;
 }
 table.table td,table.table th {
-	padding: 3px;
+	padding: 3.3px;
 	width: 30px;
 	height: 35px;
   align-items: center;
